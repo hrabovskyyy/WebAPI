@@ -55,7 +55,7 @@ public async Task<IActionResult> GetFromPublicApi(
     [FromQuery] string category = "technology",
     [FromQuery] int pageSize = 5)
 {
-    var apiKey = "c00be78923ac44c48b41c979a9457d97";
+    var apiKey = "API";
     var url = $"https://newsapi.org/v2/top-headlines?country={country}&category={category}&pageSize={pageSize}&apiKey={apiKey}";
 
     var client = httpClientFactory.CreateClient();
